@@ -11,7 +11,7 @@ def stock_purchases():
     clients_name = input("What is your name? ")
     # 1.2 TODO: Ask the client how many dollars they would like to invest (use the string: "How much would you like to invest? $")
     # and save it into a variable
-    clients_amount = int(input("How much would you like to invest? $ "))
+    clients_amount = int(input("How much would you like to invest? $"))
     # NOTE: When you use the `input` function to get user input, what do numbers get saved as?
     
     # 1.3 TODO: Uncomment the line below to ask the client which stock they're interested in.
