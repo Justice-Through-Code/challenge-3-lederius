@@ -39,3 +39,4 @@ def stock_purchases():
     # Use an f-string to print the result for the client, ala:
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
     print(f'{clients_name} has {clients_amount} to invest and can buy {stocks_available} shares of {stock_name} at the current price of {stock}')
+stock_purchases()
