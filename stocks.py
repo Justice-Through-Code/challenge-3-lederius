@@ -8,10 +8,10 @@ def stock_purchases():
 
     # Given the prices above and a client's investment budget, how much stock can they buy?
     # 1.1 TODO: Ask the client's name (use the string: "What is your name? ") and save it into a variable
-    clients_name = input("What is your name? ")
+    clients_name = input( "What is your name? ")
     # 1.2 TODO: Ask the client how many dollars they would like to invest (use the string: "How much would you like to invest? $")
     # and save it into a variable
-    clients_amount = int(input("How much would you like to invest? $"))
+    clients_amount = int(input( "How much would you like to invest? $"))
     # NOTE: When you use the `input` function to get user input, what do numbers get saved as?
     
     # 1.3 TODO: Uncomment the line below to ask the client which stock they're interested in.
@@ -38,5 +38,5 @@ def stock_purchases():
     # 1.5 TODO: Once you've calculated the number of stocks that can be purchased,
     # Use an f-string to print the result for the client, ala:
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
-    print(f'{clients_name} has ${clients_amount} to invest and can buy {stocks_available} shares of {stock_name} at the current price of ${stock}.')
+    print(f' {clients_name} has ${clients_amount} to invest and can buy {stocks_available} shares of {stock_name} at the current price of ${stock}.')
 stock_purchases()
