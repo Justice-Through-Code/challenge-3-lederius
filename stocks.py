@@ -1,11 +1,17 @@
-
 def stock_purchases():
-    amazon = 3000
-    apple = 100
-    fb = 250
-    google = 1400
-    msft = 200
+    #amazon = 3000
+    #apple = 100
+    #fb = 250
+    #google = 1400
+    #msft = 200
 
+    stocks = {
+        'Amazon' : 3000,
+        'Apple' : 100,
+        'Facebook' : 250,
+        'Google' : 1400,
+        'Microsoft' : 200 
+    }
     # Given the prices above and a client's investment budget, how much stock can they buy?
     # 1.1 TODO: Ask the client's name (use the string: "What is your name? ") and save it into a variable
     clients_name = input("What is your name? ")
@@ -23,20 +29,23 @@ def stock_purchases():
 
     # 1.4 TODO: Use `if/elif/else` conditional logic to determine how much stock the client can buy,
     # and save it in a variable
-    if stock_name == "Amazon":
-        stock = amazon
-    elif stock_name == "Apple":
-        stock = apple
-    elif stock_name == "Facebook":
-        stock = fb
-    elif stock_name == "Google":
-        stock = google
-    elif stock_name == "Microsoft":
-        stock = msft
-    stocks_available = int(clients_amount // stock)
+    # if stock_name == "Amazon":
+    #     stock = amazon
+    # elif stock_name == "Apple":
+    #     stock = apple
+    # elif stock_name == "Facebook":
+    #     stock = fb
+    # elif stock_name == "Google":
+    #     stock = google
+    # elif stock_name == "Microsoft":
+    #     stock = msft
+    for stock in stocks:
+        if stock == stock_name: 
+            stocks_available = int(clients_amount // stocks[stock])
+            print(f'{clients_name} has ${clients_amount} to invest and can buy {stocks_available} shares of {stock_name} at the current price of ${stocks[stock]}.')
 
     # 1.5 TODO: Once you've calculated the number of stocks that can be purchased,
     # Use an f-string to print the result for the client, ala:
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
-    print(f'{clients_name} has ${clients_amount} to invest and can buy {stocks_available} shares of {stock_name} at the current price of ${stock}.')
-#stock_purchases()
+    # print(f'{clients_name} has ${clients_amount} to invest and can buy {stocks_available} shares of {stock_name} at the current price of ${stock}.')
+stock_purchases()
