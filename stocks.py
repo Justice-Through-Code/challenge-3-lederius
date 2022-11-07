@@ -4,7 +4,7 @@ def stock_purchases():
     #fb = 250
     #google = 1400
     #msft = 200
-
+# this is an added dictionary
     stocks = {
         'Amazon' : 3000,
         'Apple' : 100,
@@ -39,6 +39,7 @@ def stock_purchases():
     #     stock = google
     # elif stock_name == "Microsoft":
     #     stock = msft
+    # add this for in to loop through dicitonary
     for stock in stocks:
         if stock == stock_name: 
             stocks_available = int(clients_amount // stocks[stock])
